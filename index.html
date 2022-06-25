@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div id="startpage">
+            <h1>Welcome to the coding quiz...BEGIN!</h1>
+        <button id="startbtn">Start</button>
+        <button id="startPageHighscore" onclick="showHighscore()">Leaderboards</button>
+        </div>
+
+        <div id="quiz">
+            <div id="timer">Time Remaining: </div>
+                <div id="questions"><p>Questions</p></div>
+                    <button id="a" onclick="checkAnswer('a')">A</button>
+                    <button id="b" onclick="checkAnswer('b')">B</button>
+                    <button id="c" onclick="checkAnswer('c')">C</button>
+                    <button id="d" onclick="checkAnswer('d')">D</button>
+                <div id="end"></div>
+        </div>
+        <div id="over">
+
+            <div id="endScore"></div>
+            <input type="text" size = "40" placeholder="Enter Your Initals Here" class="intials" id="initials"/>
+            <button id="submitScore">Submit Score</button>
+        </div>
+        <div id=hsContainer>
+        <div id="hsPage">
+            <div id="hsHeader">
+                <h3>Your Rank</h3>
+                <h3>Total Score</h3>
+            </div>
+            <div id = "hsInitials"></div>
+            <div id = "highscore"></div>
+        </div>
+        <div id="endBtn">
+            <button id="playAgain" onclick="replayQuiz()">Play again?</button>
+        </div>
+    </div>
+    </div>
+    <script src="./Assets/javascript.js"></script>
+</body>
+</html>
